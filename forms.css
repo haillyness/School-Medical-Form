@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh; 
+    background-image: url(pup-front.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: auto;
+    height: 120px;
+    background-color: maroon;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.logo-container {
+    margin-top: 15px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.school-name {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.sub-header {
+    font-size: 18px;
+    color: gold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; 
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+
+.form-container {
+    background-color: white;
+    padding: 20px; 
+    max-width: 160vh; 
+    margin-top: 50px;
+    width: 100%; 
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-row3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px; 
+}
+
+label {
+    margin-bottom: 5px; /* Move label below input field */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%; /* Make input fields take full width */
+}
+
+
+#names {
+    margin-left: 170px;
+}
+
+#name {
+    width: 450px;
+    margin-left: 170px;
+}
+
+#student-number {
+    width: 200px;
+    margin-right: 230px;
+}
+
+#home {
+    margin-left: 170px;
+    margin-top: -30px;
+}
+
+#address {
+    margin-left: 170px;
+}
+#address {
+    width: 450px;
+}
+
+#year{
+    margin-top: -30px;
+  
+}
+#school-year {
+    width: 200px;
+    margin-right: 230px;
+
+}
+
+#ages {
+    margin-left: 170px;
+    margin-top: -30px;
+}
+
+#age {
+    width: 60px;
+    margin-left: 170px;
+    margin-right: 110px;
+}
+
+#sexes {
+    margin-top: -30px;
+    margin-left: -120px;
+  
+  
+}
+#sex {
+   width: 100px;
+   margin-left: -120px;
+   margin-right: 40px;
+  
+}
+
+#civil{
+    margin-top: -30px;
+    margin-left: -40px;
+}
+
+#status {
+   
+    width: 110px;
+    margin-left: -50px;
+}
+
+#college{
+    margin-top: -30px;
+    margin-left: -200px;
+   
+}
+#course {
+    margin-left: -200px;
+    margin-right: 230px;
+    width: 200px;
+}
+
+#blood {
+    margin-right: -250px;
+    margin-top: -30px;
+    margin-left: -10px;
+
+}
+
+#blood-type {
+    margin-right: 220px;
+    margin-left: -10px;
+    width: 80px;
+}
+
+#email-address {
+    margin-top: -30px;
+    margin-left: 170px;
+}
+#email {
+    margin-left: 170px;
+    width: 450px;
+}
+
+#guardian {
+    margin-top: -30px;
+    margin-left: 170px;
+}
+
+#parent {
+    margin-left: 170px;
+    width: 450px;
+}
+
+#landline {
+    margin-top: -30px;
+    margin-left: -40px;
+    margin-right: 370px;
+}
+
+#landlines {
+    margin-left: -40px;
+    width: 200px;
+}
+#cel {
+    margin-left: 680px;
+    margin-top: -110px;
+}
+#cellphone {
+    margin-left: 680px;
+    width: 200px;
+}
+
+#nextButton {
+    position: relative;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 132vh;
+}
+
+#nextButton:hover {
+    background-color: black;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 50%; 
+    height: 10px;
+    background-color: maroon;
+    border-radius: 5px;
+    transition: width 0.3s ease; 
+}
+
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: maroon;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: maroon;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+#circle1,
+#circle2 {
+    margin: 0 10px;
+}
+
+#circle2 {
+    background-color: transparent;
+    color: maroon;
+}
+
+#HomeButton {
+    position: absolute;
+    bottom: -100px;
+    left: 320px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: -40px;
+}
+
+#HomeButton:hover {
+    background-color: black;
+}
+

@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container {
+    width: auto;
+    height: 110px;
+    background-color: maroon;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.school-name {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.sub-header {
+    font-size: 12px;
+    font-style: italic;
+    color: gold;
+}
+
+.u {
+    font-size: 15px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul .bottom::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: gold;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul .bottom:hover::after {
+    width: 100%;
+}
+
+.navbar ul li .form-container {
+    background-color: gold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
+.navbar ul li .form-container a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li .form-container:hover {
+    background-color: white;
+}
+
+.pup-image {
+    width: 100%;
+    height: 80vh;
+    opacity: 0.7;
+}
+
+.image-container {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.welcome{
+    color: gold;
+    font-size: 40px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    width: 40%;
+}
+
+.text-overlay h1,
+.text-overlay p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.fill-up-button {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.fill-up-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.about-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s, transform 1s;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: 50px;
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about {
+  color: gray;
+  text-align: justify;
+}
+
+.Intro {
+  color: black;
+  font-size: 26px;
+}
+
+.Medical {
+  color: maroon;
+  font-size: 26px;
+}
+
+.about-picture {
+  border-radius: 10px;
+  position: absolute;
+  top: 270px; 
+  right: -600px; 
+  width: 35rem; 
+  height: 22rem;
+}
+
+.mission-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s, transform 1s;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 700px; 
+    margin-right: 60px; 
+    margin-top: 50px;
+    float: right;
+    width: 50%;
+    position: relative;
+
+  }
+
+  .mission-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+.mission-desc {
+    float: right; 
+    text-align: justify;
+    color: grey;
+    line-height: 2;
+}
+
+.essence {
+  line-height: 2;
+  color: grey;
+}
+
+.mission-picture {
+    position: absolute;
+    border-radius: 10px;
+    top: 200px;
+    width: 36rem;
+    height: 22rem;
+    left: -620px;
+    float: left;
+    margin-right: 20px; 
+}
+
+.our {
+  font-size: 26px;
+}
+.mission {
+    color: gold;
+    font-size: 26px;
+}
+
+.team-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s, transform 1s;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+  
+  .team-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .team-desc {
+    color: grey;
+    text-align: justify;
+    line-height: 2;
+  }
+  
+  .the {
+    line-height: 2;
+    color: grey;
+  } 
+  
+  .atthe {
+    line-height: 2;
+    color: grey;
+  }
+
+  .Our-Team {
+    color: black;
+    font-size: 26px;
+  }
+  
+  .Med-Team {
+    color: maroon;
+    font-size: 26px;
+  }
+  
+  .team-picture {
+    border-radius: 10px;
+    position: absolute;
+    top: 250px; 
+    right: -600px; 
+    width: 35rem; 
+    height: 22rem;
+    bottom: 200px;
+  }
+
+.about {
+  line-height: 2;
+}
+
+.dedicated {
+  line-height: 2;
+  color: grey;
+  margin-top: 10px;
+}
+
+.resources {
+  line-height: 2;
+  color: grey;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 50px; 
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.footer-school-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-school-name {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-links,
+.contact-info,
+.social-media {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.quick-links h3,
+.contact-info h3,
+.social-media h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.quick-links ul,
+.contact-info p,
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links a,
+.contact-info p,
+.social-media a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.quick-links a:hover,
+.contact-info a:hover,
+.social-media a:hover {
+  color: #fff;
+}
+
+.contact-info p {
+  font-size: 14px;
+}
+
+.copyright {
+  flex-basis: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: #aaa;
+}
+
